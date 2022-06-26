@@ -11,3 +11,7 @@ function playSound() {
 starterBtn = document
   .getElementById("starter-button")
   .addEventListener("click", playSound);
+
+gameButtons = document.querySelectorAll(".game-selection").forEach((item) => {
+  item.addEventListener("click", playSound);
+});

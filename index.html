@@ -18,6 +18,73 @@
     <audio id="click-sound" src="/sounds/click-sound.wav"></audio>
 
     <!-- A Starter Button for initiating the game!  -->
-    <button id="starter-button" class="starter-button">Start the game</button>
+    <button id="starter-button" class="starter-button hide">
+      Start the game
+    </button>
+
+    <div class="container" id="container">
+      <!-- HEADER ELEMENT -->
+      <header id="header">
+        <h1>Rock, Paper or Scissors?</h1>
+      </header>
+
+      <!-- MAIN ELEMENT -->
+      <main id="main">
+        <!-- Player Card -->
+        <div class="card">
+          <h1 class="card-title">Player</h1>
+          <div class="player-information">
+            <div class="player-logo">
+              <img class="logo" src="images/man.svg" />
+            </div>
+            <div class="player-score">
+              <p class="score" id="player-score">Score: 0</p>
+            </div>
+          </div>
+          <div class="game-selections">
+            <div class="game-selection" id="rockdiv">
+              <img class="selection" id="rock-img" src="images/rock.svg" />
+            </div>
+            <div class="game-selection" id="paperdiv">
+              <img class="selection" id="paper-img" src="images/paper.svg" />
+            </div>
+            <div class="game-selection" id="scissorsdiv">
+              <img
+                class="selection"
+                id="scissors-img"
+                src="images/scissors.svg"
+              />
+            </div>
+          </div>
+        </div>
+        <!-- Computer Card -->
+        <div class="card">
+          <h1 class="card-title">Computer</h1>
+          <div class="player-information">
+            <div class="player-logo">
+              <img class="logo" src="images/robot.svg" />
+            </div>
+            <div class="player-score">
+              <p class="score" id="player-score">Score: 0</p>
+            </div>
+          </div>
+          <div class="game-selections">
+            <div class="game-selection" id="rockdiv">
+              <img class="selection" id="rock-img" src="images/rock.svg" />
+            </div>
+            <div class="game-selection" id="paperdiv">
+              <img class="selection" id="paper-img" src="images/paper.svg" />
+            </div>
+            <div class="game-selection" id="scissorsdiv">
+              <img
+                class="selection"
+                id="scissors-img"
+                src="images/scissors.svg"
+              />
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
   </body>
 </html>
