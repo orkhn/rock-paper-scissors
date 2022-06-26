@@ -22,3 +22,33 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
 }
+
+/* Starter Button Styles */
+#starter-button {
+  min-width: 8rem;
+  height: 4rem;
+  text-transform: uppercase;
+  padding: 1.3rem;
+  border: none;
+  font-weight: 700;
+  font-size: 2rem;
+  border-radius: 0.3rem;
+  box-shadow: 4px 5px 0px;
+  border-bottom: 0.2rem solid;
+  border-right: 0.1rem solid;
+  cursor: pointer;
+}
+
+#starter-button:hover {
+  background-color: lightgrey;
+  box-shadow: 3px 3px 1px;
+  border-bottom: 0.2rem solid;
+  transform: translate(1%, 1%);
+  transition: all 0.1s ease-in;
+}
+
+#starter-button:active {
+  box-shadow: none;
+  border-bottom-width: 0.2rem;
+  transform: translate(0.3rem, 0.4rem);
+}
