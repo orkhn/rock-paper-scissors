@@ -18,11 +18,11 @@
     <audio id="click-sound" src="/sounds/click-sound.wav"></audio>
 
     <!-- A Starter Button for initiating the game!  -->
-    <button id="starter-button" class="starter-button hide">
+    <button id="starter-button" class="starter-button button click-soundy hide">
       Start the game
     </button>
 
-    <div class="container" id="container">
+    <div class="container hide" id="container">
       <!-- HEADER ELEMENT -->
       <header id="header">
         <h1>Rock, Paper or Scissors?</h1>
@@ -42,13 +42,13 @@
             </div>
           </div>
           <div class="game-selections">
-            <div class="game-selection" id="rockdiv">
+            <div class="game-selection click-soundy" id="rockdiv">
               <img class="selection" id="rock-img" src="images/rock.svg" />
             </div>
-            <div class="game-selection" id="paperdiv">
+            <div class="game-selection click-soundy" id="paperdiv">
               <img class="selection" id="paper-img" src="images/paper.svg" />
             </div>
-            <div class="game-selection" id="scissorsdiv">
+            <div class="game-selection click-soundy" id="scissorsdiv">
               <img
                 class="selection"
                 id="scissors-img"
@@ -85,6 +85,16 @@
           </div>
         </div>
       </main>
+    </div>
+    <div class="card winner-card">
+      <div class="winner-logo-div">
+        <img class="winner-logo" id="user-wins-logo" src="images/man.svg" />
+        <img class="winner-logo" id="robot-wins-logo" src="images/robot.svg" />
+      </div>
+      <p class="game-updates"></p>
+      <button id="again-button" class="again-button button click-soundy">
+        Again?
+      </button>
     </div>
   </body>
 </html>

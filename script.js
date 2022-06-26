@@ -8,10 +8,6 @@ function playSound() {
   btnPress.play();
 }
 
-starterBtn = document
-  .getElementById("starter-button")
-  .addEventListener("click", playSound);
-
-gameButtons = document.querySelectorAll(".game-selection").forEach((item) => {
+gameButtons = document.querySelectorAll(".click-soundy").forEach((item) => {
   item.addEventListener("click", playSound);
 });
