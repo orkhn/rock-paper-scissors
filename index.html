@@ -15,7 +15,11 @@
     <script src="/script.js" defer></script>
   </head>
   <body>
-    <audio id="click-sound" src="/sounds/click-sound.wav"></audio>
+    <audio
+      id="click-sound"
+      src="/sounds/click-sound.wav"
+      preload="auto"
+    ></audio>
 
     <!-- A Starter Button for initiating the game!  -->
     <button id="starter-button" class="starter-button button click-soundy">
@@ -31,24 +35,30 @@
       <!-- MAIN ELEMENT -->
       <main id="main">
         <!-- Player Card -->
-        <div class="card">
+        <div class="card user-card">
           <h1 class="card-title">Player</h1>
           <div class="player-information">
             <div class="player-logo">
               <img class="logo" src="images/man.svg" />
             </div>
             <div class="player-score">
-              <p class="score" id="player-score">Score: 0</p>
+              <p class="score">Score: <span id="player-score">0</span></p>
             </div>
           </div>
           <div class="game-selections">
-            <div class="game-selection click-soundy" id="rockdiv">
+            <div class="game-selection click-soundy user-selected" id="rockdiv">
               <img class="selection" id="rock-img" src="images/rock.svg" />
             </div>
-            <div class="game-selection click-soundy" id="paperdiv">
+            <div
+              class="game-selection click-soundy user-selected"
+              id="paperdiv"
+            >
               <img class="selection" id="paper-img" src="images/paper.svg" />
             </div>
-            <div class="game-selection click-soundy" id="scissorsdiv">
+            <div
+              class="game-selection click-soundy user-selected"
+              id="scissorsdiv"
+            >
               <img
                 class="selection"
                 id="scissors-img"
@@ -58,24 +68,24 @@
           </div>
         </div>
         <!-- Computer Card -->
-        <div class="card">
+        <div class="card computer-card">
           <h1 class="card-title">Computer</h1>
           <div class="player-information">
             <div class="player-logo">
               <img class="logo" src="images/robot.svg" />
             </div>
             <div class="player-score">
-              <p class="score" id="player-score">Score: 0</p>
+              <p class="score">Score: <span id="comp-score">0</span></p>
             </div>
           </div>
           <div class="game-selections">
-            <div class="game-selection" id="rockdiv">
+            <div class="game-selection" id="computer-rock-div">
               <img class="selection" id="rock-img" src="images/rock.svg" />
             </div>
-            <div class="game-selection" id="paperdiv">
+            <div class="game-selection" id="computer-paper-div">
               <img class="selection" id="paper-img" src="images/paper.svg" />
             </div>
-            <div class="game-selection" id="scissorsdiv">
+            <div class="game-selection" id="computer-scissors-div">
               <img
                 class="selection"
                 id="scissors-img"
@@ -88,8 +98,16 @@
     </div>
     <div class="card winner-card hide">
       <div class="winner-logo-div">
-        <img class="winner-logo" id="user-wins-logo" src="images/man.svg" />
-        <img class="winner-logo" id="robot-wins-logo" src="images/robot.svg" />
+        <img
+          class="winner-logo hide"
+          id="user-wins-logo"
+          src="images/man.svg"
+        />
+        <img
+          class="winner-logo hide"
+          id="robot-wins-logo"
+          src="images/robot.svg"
+        />
       </div>
       <p class="game-updates"></p>
       <button id="again-button" class="again-button button click-soundy">
